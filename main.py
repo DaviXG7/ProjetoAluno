@@ -1,5 +1,3 @@
-from tkinter import VERTICAL
-
 import Janelas
 import tkinter as tk
 
