@@ -137,7 +137,7 @@ def buscar(turma, tela, label):
     label_turma = tk.Label(tela, text="Turma")
     label_m1 = tk.Label(tela, text="Nota primeiro trimestre")
     label_m2 = tk.Label(tela, text="Nota segundo trimestre")
-    label_m3 = tk.Label(tela, text="Nota terceira trimestre")
+    label_m3 = tk.Label(tela, text="Nota terceiro trimestre")
     label_mf = tk.Label(tela, text="Nota final")
 
     label_nome.grid(row=7, column=0)
@@ -227,7 +227,7 @@ def tela_inicial():
     tela = tk.Toplevel()
     tela.title('Tela inicial')
     botao_login = tk.Button(tela, text="Login", command=tela_login)
-    botao_cadastro = tk.Button(tela, text="Cadrastar", command=tela_cadastro)
+    botao_cadastro = tk.Button(tela, text="Cadastrar", command=tela_cadastro)
 
     botao_login.grid(row=0, column=0)
     botao_cadastro.grid(row=2, column=0)
@@ -277,7 +277,7 @@ def tela_cadastro():
     entry_Aluno_Professor = tk.Entry(tela, width=20)
     entry_Aluno_Professor.grid(row=1, column=1)
 
-    botao_cadastro = tk.Button(tela, text="Cadrastar",
+    botao_cadastro = tk.Button(tela, text="Cadastrar",
                                command=lambda: cadastrar(entry_nome.get(), entry_Aluno_Professor.get(), label_erro))
     botao_cadastro.grid(row=3, column=0)
 
@@ -346,7 +346,7 @@ def tela_aluno(aluno):
     label_turma = tk.Label(tela, text="Turma")
     label_m1 = tk.Label(tela, text="Nota primeiro trimestre")
     label_m2 = tk.Label(tela, text="Nota segundo trimestre")
-    label_m3 = tk.Label(tela, text="Nota terceira trimestre")
+    label_m3 = tk.Label(tela, text="Nota terceiro trimestre")
     label_mf = tk.Label(tela, text="Nota final")
 
     label_nome_aluno = tk.Label(tela, text=aluno.nome)
