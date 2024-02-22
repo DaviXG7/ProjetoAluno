@@ -204,8 +204,8 @@ def cadastrar(nome, conteudo, label):
     if modoDeCadastro:
         try:
 
-            aluno = DadosPessoas.Aluno(nome, int(matricula), conteudo, random.randrange(0, 10), random.randrange(0, 10),
-                                       random.randrange(0, 10))
+            aluno = DadosPessoas.Aluno(nome, int(matricula), conteudo, random.randrange(0, 11), random.randrange(0, 11),
+                                       random.randrange(0, 11))
             DadosPessoas.addAluno(aluno)
             label["text"] = "Seu cadastro foi feito com sucesso! Sua matrícula é: " + matricula
         except ValueError as e:
